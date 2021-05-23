@@ -1,0 +1,99 @@
+html {
+  font-size: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 
+  //~~~~~ COLOR THEME ~~~~~~//
+    ORANGE-RED   :>> #C40300
+    BURNT-YELLOW :>> #FFCA09
+    HARD-BLUE    :>> #0310AD
+    NICE-GREEN   :>> #008A22
+    PURPLE       :>> #6D008A
+  //~~~~~~~~~~~~~~~~~~~~~~~~//
+*/
+
+body {
+  background-color: #6D008A;
+  color: #FFCA09;
+}
+
+header {
+  margin: 40px;
+  padding-bottom: 12.5px;
+  border-bottom: 3px solid #008a22;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.8;
+  text-decoration: overline;
+}
+
+header nav button {
+  letter-spacing: 0.45rem;
+  color: #C40300;
+  background-color: transparent;
+  margin: 0 10px;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+}
+
+header nav button {
+  letter-spacing: 0.45rem;
+  color: #C40300;
+  background-color: transparent;
+  margin: 0 15px;
+  font-size: 1.6rem;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#hack-tally--wrapper {
+  width: 105px;
+  height: 105px;
+  background-color: #008a22;
+  border: 5px solid #0310AD;
+  border-radius: 50%;
+}
+
+#hack-tally {
+  font-family: 'Nanum Brush Script', cursive;
+  color: #FFCA09;
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+/* ~~~ Layout/Utility Rules ~~~ */
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+.mt-4 {
+  margin-top: 40px;
+}
