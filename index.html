@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Hack Trak (POC)</title>	
-  <!--[if le IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Hack Trak (POC)</title>
+    <!--[if le IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/css/reset.css" />
+    <link rel="stylesheet" href="public/css/app.css" />
+  </head>
+  <body>
+    <header class="d-flex justify-content-between align-items-center">
+      <h1>Hack Trak</h1>
+      <nav class="d-flex justify-content-between align-items-center">
+        <button id="reset-btn">Reset</button>
+        <button id="record-btn">Record</button>
+      </nav>
+    </header>
+    <main>
+      <section class="d-flex justify-content-center mt-3">
+        <div
+          id="hack-tally--wrapper"
+          class="d-flex justify-content-center align-items-center"
+        >
+          <span id="hack-tally">--</span>
+        </div>
+      </section>
+    </main>
 
-  <![endif]-->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="public/css/reset.css"/>
-  <link rel="stylesheet" href="public/css/app.css"/>
-</head>
-<body>
-  <header class="d-flex justify-content-between align-items-center">
-    <h1>Hack Trak</h1>
-    <nav class="d-flex justify-content-between align-items-center">
-      <button id="reset-btn">
-        Reset
-      </button id="record-btn">
-      <button>
-        Record
-      </button>
-    </nav>
-  </header>
-  <main>
-    <section class="d-flex justify-content-center mt-3">
-      <div id="hack-tally--wrapper" class="d-flex justify-content-center align-items-center">
-        <span id="hack-tally">--</span>
-      </div>
-    </section>
-  </main>
-
-  <script src="public/js/app.js"></script>
-</body>
+    <script src="public/js/app.js"></script>
+  </body>
 </html>
-
