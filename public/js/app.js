@@ -71,12 +71,14 @@
   };
 
   const record = () => {
+    recordBtn.classList.add("recording");
     hackTally.innerHTML = 0;
     interval = setInterval(hackTrak, 20);
   };
 
   const reset = () => {
     clearInterval(interval);
+    recordBtn.classList.remove("recording");
     hackTally.innerHTML = "--";
     hacks = 0;
   };
@@ -93,8 +95,8 @@
     analyserNode;
 
   // CREATE the audio context
-  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-  soundGuy(audioCtx);
+  // const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  // soundGuy(audioCtx);
 
   recordBtn.addEventListener("click", record);
   resetBtn.addEventListener("click", reset);
