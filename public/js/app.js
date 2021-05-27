@@ -82,7 +82,7 @@
   const reset = () => {
     clearInterval(interval);
     recordBtn.classList.remove("recording");
-    hackTally.innerHTML = "--";
+    hackTally.innerHTML = "-";
     hacks = 0;
   };
 
