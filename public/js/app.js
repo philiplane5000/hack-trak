@@ -7,7 +7,6 @@
     navigator.msGetUserMedia;
 
   const hackTrak = () => {
-    console.log("20ms");
     const bufferLength = analyserNode.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength);
     analyserNode.getByteFrequencyData(dataArray);
