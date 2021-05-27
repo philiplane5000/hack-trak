@@ -7,6 +7,7 @@
     navigator.msGetUserMedia;
 
   const hackTrak = () => {
+    console.log("20ms");
     const bufferLength = analyserNode.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength);
     analyserNode.getByteFrequencyData(dataArray);
@@ -54,7 +55,9 @@
     // CAPTURE the user's microphone to use as 'stream' for AudioContext
     try {
       let stream = await getStream({ video: false, audio: true });
+      console.log('stream :>> ', stream);
       source = audioContext.createMediaStreamSource(stream);
+      console.log('source :>> ', source);
 
       // CREATE analyser node
       analyserNode = audioContext.createAnalyser();
@@ -95,8 +98,8 @@
     analyserNode;
 
   // CREATE the audio context
-  // const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-  // soundGuy(audioCtx);
+  const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  soundGuy(audioCtx);
 
   recordBtn.addEventListener("click", record);
   resetBtn.addEventListener("click", reset);
