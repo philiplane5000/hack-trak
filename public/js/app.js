@@ -27,14 +27,14 @@
     let avg = total / bufferLength;
 
     if (avg > 65) {
-      console.log(`%c${avg}`, hackRange);
+      // console.log(`%c${avg}`, hackRange);
       if (flag === false) {
         hacks++;
         hackTally.innerHTML = hacks;
         flag = true;
       }
     } else if (avg < 50) {
-      console.log(avg.toString());
+      // console.log(avg.toString());
       if (flag === true) {
         flag = false;
       }
